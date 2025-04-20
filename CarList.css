@@ -1,0 +1,91 @@
+/* CarList.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+
+/* Container */
+.carlist-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.carlist-container h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.carlist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Car Card */
+.car-card {
+  background-color: #f8f9fc;
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.car-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Car Image */
+.car-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Car Info */
+.car-content h3 {
+  color: #0078ff;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.car-content p {
+  font-size: 15px;
+  margin: 6px 0;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carlist-grid {
+    justify-content: center;
+  }
+
+  .car-card {
+    width: 90%;
+  }
+}

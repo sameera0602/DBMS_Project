@@ -1,0 +1,85 @@
+/* SellNow.css */
+
+/* Background & Container */
+.sell-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Card Box */
+.sell-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Heading */
+.sell-box h1 {
+  font-size: 2.2rem;
+  color: #667eea;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Inputs */
+.sell-box input {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.sell-box input:focus {
+  border-color: #667eea;
+  background-color: #f0f0f0;
+  outline: none;
+}
+
+/* Submit Button */
+.sell-box button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background-color: #667eea;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sell-box button:hover {
+  background-color: #5a67d8;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .sell-box {
+    padding: 30px 20px;
+  }
+
+  .sell-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .sell-box input, .sell-box button {
+    font-size: 14px;
+  }
+}
