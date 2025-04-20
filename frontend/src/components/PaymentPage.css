@@ -1,0 +1,78 @@
+/* PaymentPage.css */
+
+/* Container */
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Payment Card */
+.payment-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Heading */
+.payment-card h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.payment-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Pay Button */
+.payment-card button {
+  background-color: #667eea;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.payment-card button:hover {
+  background-color: #5a67d8;
+  transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .payment-card {
+    padding: 30px 20px;
+  }
+
+  .payment-card h2 {
+    font-size: 1.6rem;
+  }
+}
